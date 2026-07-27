@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://heartbeat-med.com/.well-known/*
+host: https://heartbeat-med.com
+note: >-
+  No .well-known discovery documents are published. The corporate site sits
+  behind a Cloudflare managed bot challenge; the paths below were probed live
+  and every one returned 404 (not a challenge intercept). Recorded as honest
+  negative evidence — no WellKnown/SecurityTxt pointer is wired because no
+  catalog exists.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
